@@ -1,0 +1,18 @@
+<section id="header">
+    <a href="#"> <img src="../../assets/images/logo-2.png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar" #navbar>
+            <li><a  [routerLink]="'/Home'" [routerLinkActive]="'active'">Home</a></li>
+            <li><a [routerLink]="'/Shop'" [routerLinkActive]="'active'">Shop</a></li>
+            <li><a [routerLink]="'/Blog'" [routerLinkActive]="'active'">Blog</a></li>
+            <li><a [routerLink]="'/About'" [routerLinkActive]="'active'">About</a></li>
+            <li><a [routerLink]="'/Contact'" [routerLinkActive]="'active'">Contact Us </a></li>
+            <li><a [routerLink]="'/Cart'" [routerLinkActive]="'active'"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="#" class="active" id="close" #close><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" #bar class="fa-solid fa-bars"></i>
+    </div>
+
+</section>

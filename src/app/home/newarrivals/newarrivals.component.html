@@ -1,0 +1,20 @@
+<section id="product1" class="section-p1">
+    <h2>New Arrivals</h2>
+    <p>Summer collection New Modern Desgin</p>
+    <div class="pro-container">
+        <div class="pro" *ngFor="let item of newArrivals">
+            <img [src]="item.image" alt="">
+            <div class="des">
+                <span>{{item?.brand}} </span>
+                <h5>{{item?.title}}</h5>
+                <div class="star">
+                    <i class="fas fa-star" *ngFor="let star of item?.rating"></i>
+                </div>
+                <h4>{{item?.price | currency:'INR'}}</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+        </div>
+
+       
+    </div>
+</section>
